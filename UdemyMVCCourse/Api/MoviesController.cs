@@ -100,6 +100,7 @@ namespace UdemyMVCCourse.Api
             }
 
             var movie = Mapper.Map<Movie>(movieDto);
+            movie.StockAvailable = movie.Stock;
             _context.Movies.Add(movie);
             _context.SaveChanges();
 

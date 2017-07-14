@@ -99,6 +99,7 @@ namespace UdemyMVCCourse.Controllers
             if (movie.Id == 0)
             {
                 movie.DateAdded = DateTime.Now;
+                movie.StockAvailable = movie.Stock;
                 _context.Movies.Add(movie);
             }
             else

@@ -30,6 +30,7 @@ namespace UdemyMVCCourse
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                           "~/Content/bootstrap-lumen.css",
+                          "~/Content/my-bootstrap-theme.css",
                           "~/Content/DataTables/css/dataTables.bootstrap.css",
                           "~/Content/typeahead.css",
                           "~/Content/toastr.css",
