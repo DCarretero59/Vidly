@@ -1,0 +1,15 @@
+﻿@model UdemyMVCCourse.Models.Customer
+
+@{
+    ViewBag.Title = Model.Name;
+    Layout = "../Shared/_Layout.cshtml";
+}
+
+<h2>@Model.Name</h2>
+<ul>
+    <li>Membership Type: @Model.MembershipType.Name</li>
+    @if (@Model.Birthdate.HasValue)
+    {
+        <li>Birth Date: @Model.Birthdate.Value.ToString("dd/MM/yyyy")</li>
+    }
+</ul>
